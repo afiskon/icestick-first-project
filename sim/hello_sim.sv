@@ -3,7 +3,7 @@
 module hello_sim();
     logic clck_t;
     logic [3:0] sw_t;
-    wire [3:0] led_t;
+    logic [3:0] led_t;
 
     hello hello_t(clck_t, sw_t, led_t);
 
