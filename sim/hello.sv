@@ -6,6 +6,7 @@ module hello(
     output logic [3:0] led
 );
 
+// iverilog doesn't support `always_ff`
 always @(posedge CLK100MHZ)
 begin
     if(sw[0] == 0)
